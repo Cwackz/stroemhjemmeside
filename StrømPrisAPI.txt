@@ -1,0 +1,18 @@
+https://www.elprisenligenu.dk/elpris-api
+
+https://www.energidataservice.dk/guides/api-guides
+
+https://www.energidataservice.dk/tso-electricity/Elspotprices
+
+https://www.elprisenligenu.dk/api/v1/prices/2023/05-03_DK2.json
+
+Ingen gimmicks eller smarte ting, kun elpriserne leveret som en statisk json-fil:
+
+GET https://www.elprisenligenu.dk/api/v1/prices/[ÅR]/[MÅNED]-[DAG]_[PRISKLASSE].json
+
+Variabel	Beskrivelse	Eksempel
+ÅR	Alle fire cifre	2023
+MÅNED	Altid to cifre, med 0 foran	05
+DAG	Altid to cifre, med 0 foran	04
+PRISKLASSE	DK1 = Aarhus / Vest for Storebælt
+DK2 = København / Øst for Storebælt	DK2
