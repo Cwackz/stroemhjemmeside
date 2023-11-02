@@ -50,7 +50,7 @@ if response.status_code == 200:
         price_element.appendChild(timestamp_element)
 
     new_line = input("Ny pris (DKK/kWh): ")
-    if new_line.strip(): # check if input value is not blank or only whitespace
+    if new_line.strip():
         price_element = root.createElement("price")
         price_element.appendChild(root.createTextNode(str(new_line)))
         prices_element.appendChild(price_element)
